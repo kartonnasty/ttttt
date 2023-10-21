@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/div.css">
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
     <div class="bodydiv">
@@ -24,10 +25,17 @@
                 <h1>RETURN AND REFUNDS POLICY</h1>
             </div>
             <p class="formp">We just need some basic information to know you better</p>
-                <label for="firstname">First Name</label>
+            <div class="firstnamecontainer">
+                <div>
+                    <label for="firstname" class="firstname">First Name</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="lastname" class="lastname">Last Name</label>
                 <input type="text">
-                <label for="lastname">Last Name</label>
-                <input type="text">
+                </div>
+            </div>
+            <div class="optionscontainer">
                 <select name="accountproblems" id="options" required>
                     <option value="permanent">Permanent Ban</option>
                     <option value="temporal">Temporal Ban</option>
@@ -37,7 +45,17 @@
                     <option value="underage">Underage Ban</option>
                     <option value="device">Device Ban</option>
                 </select>
-                <label for="bannedaccount">Banned Account Username</label>
+            </div>
+            <div class="tiknamecontainer">
+                <div>
+                    <label for="tikname">Tiktok Name</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="tikuser">Tiktok Username</label>
+                <input type="text">
+                </div>
+            </div>
         </div>
     </div>
 </body>
